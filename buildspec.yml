@@ -3,7 +3,7 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - "echo Logging in to ECR..."
+      - "echo Logging in to ECR....."
       - $(aws ecr get-login --region us-east-1 --no-include-email)
   build:
     commands:
